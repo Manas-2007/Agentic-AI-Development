@@ -52,3 +52,19 @@ print("Difference (Set1 - Set2) : ",Difference)
 print("Difference (Set2 - Set1) : ",set2-set1)
 
 
+# isdisjoint() method (Checks is both sets are different or not)
+x={45,22,89}
+y={1,2,3}
+print("Disjoint Status : ",x.isdisjoint(y))
+
+# issubset() 
+x={1,2,3,4}
+y={1,2}
+print("Subset Status : ")
+print(y.issubset(x))
+print(x.issubset(y))
+
+# issuperset() 
+print("Superset Status : ")
+print(x.issuperset(y))
+print(y.issuperset(x))
