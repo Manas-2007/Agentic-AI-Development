@@ -39,3 +39,23 @@ for i in range(marks):
 print("Original Mark List :",marks_list)
 avg=average(marks_list)
 print(f"The average marks are {avg}")
+
+
+print("================== PASSING FUNCTIONS AS ARGUMENTS =====================")
+def addition(a,b):
+    return a+b
+
+def multiplication(a,b):
+    return a*b
+
+def calculator(func,num1,num2):
+    result=func(num1,num2)
+    return result
+
+print(calculator(addition,5,6))
+print(calculator(multiplication,5,6))
+
+# -----------Store the functions are variables
+y=calculator
+print(y(addition,10,15))
+print(y(multiplication,8,9))
